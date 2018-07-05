@@ -1,0 +1,32 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+#topnav {
+  font-size: 17px;
+  float: right;
+  margin-left: -58%;
+  padding: 40%;
+  margin-top: -33%;
+  margin-right: -33%;
+  }
+
+#topnav, a {
+  margin: 0;
+  float: right;
+  font-size: 50px;
+  color: #e38f84;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+a {
+  font-size: 35px;
+  margin-left: 10%;
+}
+.logo {
+  /* this style positions logo image to left side of webpage */
+  float: left;
+}

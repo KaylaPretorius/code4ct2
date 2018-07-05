@@ -1,0 +1,112 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.logo {
+  float: left;
+}
+
+h2{
+  font-size: 50px;
+  padding: 100px;
+}
+/*  This is where the styling for carousel starts*/
+.carousel {
+  /* with this positioning the pictures are placed alongside one another */
+  width: 167%;
+}
+
+/*This container holds the carousel*/
+
+
+#partners-wrapper {
+  overflow: hidden;
+  background-color: black;
+  margin-left: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+#partners {
+  /* the overflow prevents pictures from overlapping one another */
+  overflow: hidden;
+  width: 1000%;
+  margin-top: 0;
+}
+
+/*this styling regulates the speed and loop of the carousel*/
+#partners, .ready > *{
+display: inline-block;
+float:left;
+overflow: hidden;
+
+/* linear feature aligns images in a row */
+webkit-animation-timing-function: linear;
+animation-timing-function: linear;
+
+
+-webkit-animation-timing-function: linear;
+animation-timing-function: linear;
+
+/* this is the actual time before the slider starts */
+-webkit-animation-delay: 1s;
+animation-delay: 1s;
+
+
+-webkit-animation-duration: 20s;
+animation-duration: 20s;
+
+
+-webkit-animation-name: marginator;
+animation-name: marginator;
+
+/* the infinite feature prevents pause so slider runs continously */
+-webkit-animation-iteration-count: infinite;
+animation-iteration-count: infinite;
+}
+
+/*the carousel will pause on hover and the movement is regulated here*/
+#partners:hover > *{
+
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+@-webkit-keyframes marginator {
+  0% {
+    -webkit-transform: translate(0,0);
+    -webkit-transform: translate3d(0,0,0);
+  }
+  100% {
+    -webkit-transform: translate(-100%,0);
+    -webkit-transform: translate3d(-100%,0,0);
+  }
+}
+
+@keyframes marginator {
+  0% {
+
+    -webkit-transform: translate(0,0);
+    transform: translate(0,0);
+
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+  100% {
+
+
+    -webkit-transform: translate(-100%,0);
+    transform: translate(-100%,0);
+
+
+    -webkit-transform: translate3d(-100%,0,0);
+    transform: translate3d(-100%,0,0);
+  }
+}
+/* styling for carousel ends here */
+
+footer {
+background-color: #ff5252;
+}
