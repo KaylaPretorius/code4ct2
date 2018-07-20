@@ -1,32 +1,210 @@
 body {
-  width: 100%;
-  height: 100%;
+  font-family: sans-serif;
   margin: 0;
+  padding: 0;
+}
+/* this is for the styling of back to top button placed in footer */
+html {
+  scroll-behavior: smooth;
 }
 
-#topnav {
-  font-size: 17px;
-  float: right;
-  margin-left: -58%;
-  padding: 40%;
-  margin-top: -33%;
-  margin-right: -33%;
-  }
+.navigation {
+  width: 50%;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 4px -3px #232323;
+  -moz-box-shadow: 0 4px 4px -3px #232323;
+  -webkit-box-shadow: 0 4px 4px -3px #232323;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+  padding-top: 0px;
+  margin-left: 50%;
+}
 
-#topnav, a {
-  margin: 0;
-  float: right;
-  font-size: 50px;
-  color: #e38f84;
-  font-family: sans-serif;
+.navigation a {
   text-decoration: none;
 }
 
-a {
-  font-size: 35px;
-  margin-left: 10%;
+.navigation ul {
+  margin-top:30px;
+  text-align:center;
+  list-style:none;
+  margin-left:auto;
+  margin-right:auto;
 }
+
+.menulist {
+  width:200px;
+}
+
 .logo {
-  /* this style positions logo image to left side of webpage */
+  margin:0 auto;
+}
+
+.line1, .line2, .line3 {
+  margin-top:5px;
+  background-color: hsl(0, 4%, 5%);
+  width:25px;
+  height:3px;
+  display:block;
+  position:relative;
+  opacity:1.0;
+  border-radius:15%;
+  transition: all .3s;
+}
+
+.line1.active {
+  transform: rotate(270deg);
+  opacity:0.0;
+  background-color:black;
+  top:5px;
+}
+
+.line2.active {
+  transform: rotate(45deg);
+  background-color:black;
+}
+
+.line3.active {
+  transform: rotate(-45deg);
+  background-color:black;
+  top:-7px;
+}
+
+.menuitems {
+  margin-right: 100%;
+  padding-top: 13px;
+  padding-bottom: 12px;
+  text-decoration: none;
+  list-style:none;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  display: inline-block;
+  position:relative;
+  text-align:center;
+  color: white;
+  font-weight: bolder;
+  opacity:0.0;
+  transition: all .5s ease-in-out;
+}
+
+.menuitems:after {
+  content:'';
+  display:block;
+  width: 0;
+  height: 1px;
+  background: #fff;
+  transition: width .2s;
+}
+
+.menuitems:hover::after {
+  width:100%;
+}
+
+#closebtn {
+  height:25px;
+  width:25px;
+  position: absolute;
+  text-decoration:none;
+  top: 10px;
+  left: 135px;
+  font-size: 36px !important;
+  margin-right: 50px;
+  z-index:100;
+  color:#fff;
+  cursor:pointer;
+  transition:background-position .3s;
+}
+
+#main {
+  transition: margin-top .4s;
+  text-align:center;
+  margin:auto;
+  padding: 16px;
+  font-size:30px;
+}
+
+header, .logo {
   float: left;
+}
+
+hr {
+  margin-top: 12%;
+}
+
+span {
+  text-decoration: underline;
+  text-decoration-color: #ffb6c1;
+  text-decoration-style: solid;
+}
+
+.course-1 {
+  margin-top: -14%;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+h2 {
+  margin-left: 1%;
+  color: #ffb6c1;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#course-info {
+  width: 95%;
+  font-style: italic;
+  margin-left: 1%;
+  font-size: 15px;
+}
+
+/* this styles the back to top button */
+
+.back-to-top {
+  margin-top: 10%;
+}
+
+.top-button {
+  margin-left: 88%;
+  padding: 10px;
+  background-color: grey;
+  font-weight: bolder;
+}
+
+.facebook {
+  width: 6%;
+  margin-bottom: -5%;
+}
+
+.linkedin {
+  width: 6%;
+  margin-bottom: -5%;
+}
+
+.twitter {
+  width: 6%;
+  margin-bottom: -6%;
+}
+
+.googleplus {
+  width: 6%;
+  margin-bottom: -5.5%;
+}
+
+.footer-text {
+  font-size: 12px;
+  margin-top: 5%;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  text-decoration: none;
+  height: 20%;
+  background-color: #ffb6c1 ;
 }

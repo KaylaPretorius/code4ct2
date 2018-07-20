@@ -3,24 +3,42 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/contact.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>contact</title>
 </head>
+
+<header class="logo">
+  <img src="images\logo.jpg" alt="logo" width="45%"/>
+</header>
+
 <body>
-  <header>
 
-    <img class="logo" src="images\logo.jpg" alt="logo" width="45%">
-    <div id="topnav">
-      <a href="home.html">Home</a>
-      <a href="courses">Courses</a>
-      <a href="about.html">About</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </header>
 
-  <section class="contactUs">
-    <center><h1>CONTACT US</h1></center>
-  </section>
+  <div id="top"></div>
+
+  <div id="topNav" class="navigation">
+    <span id="closebtn" onclick="navToggle()">
+      <span class="line1"></span>
+      <span class="line2"></span>
+      <span class="line3"></span>
+    </span>
+
+
+    <ul class="menulist">
+      <li><a class="menuitems" href="index.html">HOME</a></li>
+      <li><a class="menuitems" href="courses.html">COURSES</a></li>
+      <li><a class="menuitems" href="about.html">ABOUT</a></li>
+      <li><a class="menuitems" href="portfolio.html">PORTFOLIO</a></li>
+      <li><a class="menuitems" href="contact.html ">CONTACT</a></li>
+    </ul>
+  </div>
+
+  <div id="main">
+  </div>
+  <!-- <input type="text" placeholder="Search.."> -->
+  <hr>
+
+  <span><center><h1>Contact Us</h1></center></span>
 
   <section class="message-box">
     <div>
@@ -31,52 +49,55 @@
       <input type="text" placeholder="Your Name"><br>
       <input type="text" placeholder="Your E-mail"><br>
       <input type="text" placeholder="Your Number"><br>
-      <textarea name="" id="" cols="30" rows="10" placeholder="Your Messages"></textarea>
-      <button>Send Email</button>
+      <textarea name="" id="" placeholder="Your Messages"></textarea>
+      <button id="send">Send Email</button>
     </form>
   </section>
-
 
   <div class="map">
     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d788.8644360169184!2d18.448709!3d-33.924556!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe3d98aec2cc1ee1c!2sUrbantek!5e1!3m2!1sen!2sus!4v1530084075490" width="100%" height="100%"></iframe>
   </div>
-
-
-  <section>
-    <div class="miscellaneous">
-      <center><h1>Contact Us</h1></center>
-      <center><p id="telephone-number">021 685 0991</p></center>
-      <br>
-      <p>info@code4ct.com</p>
-      <br>
-      <p>Innovate South Africa,403 Old Castle Brewery, 6 Beach Rd, Woodstock, Cape Town, 7915</p>
-      <br>
-      <center><h1>Company</h1></center>
-      <ul>
-        <li>About Us</li>
-        <li>Contact Us</li>
-        <li>Blog</li>
-        <li>Testimonials</li>
-        <li>Affiliate Program</li>
-      </ul>
-      <center><h1>Help & Support</h1></center>
-      <ul>
-        <li>Help Center</li>
-        <li>Free Simple Template</li>
-        <li>Refund Policy</li>
-        <li>Report Span</li>
-      </ul>
-    </div>
-  </section>
   <br>
 
-  <footer>
-    <p>Copyright 2017 Privacy Policy<p>
+  <div class="miscellaneous">
+    <img  class="contact" src="images\phone.png">
+    <center><p id="telephone-number">021 685 0991</p></center>
+    <br>
+    <p id="email">info@code4ct.com</p>
+    <br>
+    <p id="address">Innovate South Africa,403 Old Castle Brewery, 6 Beach Rd, Woodstock, Cape Town, 7915</p>
+    <br>
+    <center><h1>Company</h1></center>
+    <ul>
+      <li>About Us</li>
+      <li>Contact Us</li>
+      <li>Blog</li>
+      <li>Testimonials</li>
+      <li>Affiliate Program</li>
+    </ul>
+    <center><h1>Help & Support</h1></center>
+    <ul>
+      <li>Help Center</li>
+      <li>Free Simple Template</li>
+      <li>Refund Policy</li>
+      <li>Report Span</li>
+    </ul>
+  </div>
+
+  <!-- this is for the scroll  -->
+  <div class="back-to-top">
+    <button class="top-button"><a href="#top">^</a></button>
+  </div>
+
+  <footer id="footer">
+    <p class="footer-text">Copyright 2017 Privacy Policy<p>
       <br>
-      <p> follow us: Twitter, Facebook, linkein, google plus</p>
+      <img class="twitter" src="images\twitter.png">
+      <img class="linkedin" src="images\linkedin-logo.png">
+      <img class="facebook" src="images\facebook.png">
+      <img class="googleplus" src="images\google-plus-social-logotype.png">
     </footer>
 
-
-
+    <script src="javascript/javascript.js"></script>
   </body>
   </html>

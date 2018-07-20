@@ -1,260 +1,277 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-<meta charset="utf-8">
-<link rel="stylesheet" href="css/main.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>about</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage</title>
 </head>
 
-<header>
-
-<img class="logo" src="images\logo.jpg" alt="logo" width="45%">
-<div id="topnav">
-  <a href="home.html">Home</a>
-  <a href="courses.html">Courses</a>
-  <a href="about.html">About</a>
-  <a href="portfolio.html">Portfolio</a>
-  <a href="contact.html">Contact</a>
-  <input type="text" placeholder="Search..">
-</div>
+<header class="logo">
+  <img src="images\logo.jpg" width="100%">
 </header>
 
 <body>
 
-<div class="slider-container">
-  <div class="slides">
-    <img src="images/slide1.jpg" class="images">
+  <div id="top"></div>
+
+  <div id="topNav" class="navigation">
+    <span id="closebtn" onclick="navToggle()">
+      <span class="line1"></span>
+      <span class="line2"></span>
+      <span class="line3"></span>
+    </span>
+
+
+    <ul class="menulist">
+      <li><a class="menuitems" href="index.html">HOME</a></li>
+      <li><a class="menuitems" href="courses.html">COURSES</a></li>
+      <li><a class="menuitems" href="about.html">ABOUT</a></li>
+      <li><a class="menuitems" href="portfolio.html">PORTFOLIO</a></li>
+      <li><a class="menuitems" href="contact.html">CONTACT</a></li>
+    </ul>
+  </div>
+
+  <div id="main">
+  </div>
+  <!-- <input type="text" placeholder="Search.."> -->
+  <hr>
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="images\slide1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="images\slide2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="images\slide3.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="images\slide4.jpg" style="width:100%">
+    </div>
+
+
     <div class="text-block">
-      <h4 class="intro-text"><center>Code for Cape Town</center></h4>
+      <h4><center>Code for Cape Town</center></h4>
       <p class="intro-text">We want to see young women empowered to leverage technology for social innovation, so that there is greater diversity in the African tech industry. We want high school girls to have an enabling environment to imagine and create new technology that is relevant to a South African context.</p>
-      <button class="button-one" type="button">Coding</button> <br>
-      <button class="button-two" type="button">About Us</button>
-    </div>
-  </div>
-
-  <div class="slides">
-    <img src="images/slide2.jpg" class="images">
-  </div>
-
-  <div class="slides">
-    <img src="images/slide3.jpg" class="images">
-  </div>
-
-  <div class="slides">
-    <img src="images/slide4.jpg" class="images">
-  </div>
-</div>
-
-<br>
-
-<section>
-  <div>
-    <center><h2>Who We Are</h2></center>
-    <p>Code for Cape Town (Code4CT) is a programme that introduces young girls to basic web building skills and exposes them to opportunities in the Information and Communication Technologies (ICT) sector. Participants are trained in web development, design principles, as well as courses in professional development. Code4CT aims to inspire a generation of young girls who are well-prepared with a toolkit of technical and soft skills in order to achieve high impact in the workplace.</p>
-    <button class="read-more" type="button">Read More</button>
-  </div>
-</section>
-
-<br>
-
-<section>
-  <div class="gallery">
-    <img src="images\image-1.jpg"  width="100%">
-  </div>
-  <div class="gallery">
-    <img src="images\image-2.jpg" width="100%">
-  </div>
-  <div class="gallery">
-    <img src="images\image-3.jpg" width="100%">
-  </div>
-  <div class="gallery">
-    <img src="images\image-4.jpg" width="100%">
-  </div>
-</section>
-
-<section>
-  <div class="icon-wrapper">
-    <div class="icon-1">
-      <center><img src="images/icon-1.png"></center>
-      <center><h2>Coding</h2></center>
-      <p>Learn how to build your own websites using HTML, CSS, JavaScript & JQuery. Go on to explore exciting modules from game development to user experience design.</p>
+      <a href="courses.html"><button class="button-one" >Coding</button></a>
+      <a href="about.html"><button class="button-two" type="button">About Us</button></a>
     </div>
 
-    <div class="icon-2">
-      <center><img src="images/icon-2.png"></center>
-      <center><h2>Communication</h2></center>
-      <p>Learn how to pitch ideas, represent yourself online, communicate professionally and work with online collaboration tools.</p>
+
+    <div>
+      <span><center><h2>Who We Are</h2></center></span>
+      <p id="description-text">Code for Cape Town (Code4CT) is a programme that introduces young girls to basic web building skills and exposes them to opportunities in the Information and Communication Technologies (ICT) sector. Participants are trained in web development, design principles, as well as courses in professional development. Code4CT aims to inspire a generation of young girls who are well-prepared with a toolkit of technical and soft skills in order to achieve high impact in the workplace.</p>
+      <a href="about.html"><button class="read-more" type="button">Read More</button></a>
     </div>
 
-    <div class="icon-3">
-      <center><img src="images/icon-3.png"></center>
-      <center><h2>Problem Solving</h2></center>
-      <p>Apply your coding skills to issues you are interested in. You will learn how to tackle complex problems using the design thinking process.</p>
-    </div>
-
-    <div class="icon-4">
-      <center><img src="images/icon-4.png"></center>
-      <center><h2>Career Guidance</h2></center>
-      <p>Explore future options by meeting different companies doing exciting things with technology. We offer career testing and connect you to our network of study institutions and bursary programs.</p>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div>
-    <center><h2>Our Awesome Portfolio</h2></center>
-    <p>We equip high potential female learners with the coding, problem solving
-      and life skills that will allow them to leverage technology to contribute meaningfully to South Africa’s innovation system.
-      The program exposes young women to how technology can be used for social innovation and helps them navigate critical study decisions.</p>
-    </div>
-  </section>
-
-  <section>
+    <!-- <div id="images-container"> -->
     <div class="gallery">
-      <img src="images\image-5.jpg"  width="100%">
+      <img class="image-1" src="images\image-1.jpg"  width="100%">
     </div>
     <div class="gallery">
-      <img src="images\image-6.jpg" width="100%">
+      <img class="image-2" src="images\image-2.jpg" width="100%">
     </div>
     <div class="gallery">
-      <img src="images\image-7.jpg" width="100%">
+      <img class="image-3" src="images\image-3.jpg" width="100%">
     </div>
     <div class="gallery">
-      <img src="images\image-8.jpg" width="100%">
+      <img class="image4" src="images\image-4.jpg" width="100%">
     </div>
-  </section>
 
-  <section>
-    <div class="profile-1">
-      <center><h3>Meet The Team</h3></center>
-      <br>
-      <center><img id="profile-image"src="images\emma.png"></center>
-      <center><h4>Emma Dicks<h4></center>
-        <center><h5>Founder and Director</h5><center>
+    <section>
+      <div class="icon-wrapper">
+        <div class="icon-1">
+          <center><img src="images/icon-1.png"></center>
+          <center><h2 id="icon-name">Coding</h2></center>
+          <p>Learn how to build your own websites using HTML, CSS, JavaScript & JQuery. Go on to explore exciting modules from game development to user experience design.</p>
+        </div>
+
+        <div class="icon-2">
+          <center><img src="images/icon-2.png"></center>
+          <center><h2 id="icon-name">Communication</h2></center>
+          <p>Learn how to pitch ideas, represent yourself online, communicate professionally and work with online collaboration tools.</p>
+        </div>
+
+        <div class="icon-3">
+          <center><img src="images/icon-3.png"></center>
+          <center><h2 id="icon-name">Problem Solving</h2></center>
+          <p>Apply your coding skills to issues you are interested in. You will learn how to tackle complex problems using the design thinking process.</p>
+        </div>
+
+        <div class="icon-4">
+          <center><img src="images/icon-4.png"></center>
+          <center><h2 id="icon-name">Career Guidance</h2></center>
+          <p>Explore future options by meeting different companies doing exciting things with technology. We offer career testing and connect you to our network of study institutions and bursary programs.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <span><center><h2>Our Awesome Portfolio</h2></center></span>
+        <p id="portfolio-text">We equip high potential female learners with the coding, problem solving
+          and life skills that will allow them to leverage technology to contribute meaningfully to South Africa’s innovation system.
+          The program exposes young women to how technology can be used for social innovation and helps them navigate critical study decisions.</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="gallery">
+          <img src="images\image-5.jpg"  width="100%">
+        </div>
+        <div class="gallery">
+          <img src="images\image-6.jpg" width="100%">
+        </div>
+        <div class="gallery">
+          <img src="images\image-7.jpg" width="100%">
+        </div>
+        <div class="gallery">
+          <img src="images\image-8.jpg" width="100%">
+        </div>
+      </section>
+
+      <section>
+        <div class="profile-1">
+          <center><h3>Meet The Team</h3></center>
           <br>
-          <p class="profile-info">Emma is passionate about providing high quality education that enables young people to bring innovative ideas to life and play an active role in South Africa’s economy.</p>
-          <center><img id="profile-image"src="images\andrea.png"></center>
-          <center><h4>Andrea Petersen<h4></center>
-            <center><h5>Operations Lead</h5><center>
+          <center><img id="profile-image"src="images\emma.png"></center>
+          <center><h4>Emma Dicks<h4></center>
+            <center><h5>Founder and Director</h5><center>
               <br>
-              <p class="profile-info">Andrea thrives on seeing key players in the Code4CT ecosystem discover how they can make the greatest impact.</p>
-
-              <center><img id="profile-image"src="images\tegan.png"></center>
-              <center><h4>Tegan Crous<h4></center>
-                <center><h5>Program Lead</h5><center>
+              <p class="profile-info">Emma is passionate about providing high quality education that enables young people to bring innovative ideas to life and play an active role in South Africa’s economy.</p>
+              <center><img id="profile-image"src="images\andrea.png"></center>
+              <center><h4>Andrea Petersen<h4></center>
+                <center><h5>Operations Lead</h5><center>
                   <br>
-                  <p class="profile-info">Tegan heads up the high school program. She is spurred on by a heart for people and seeing them pursue their potential in a safe, fun and nurturing environment.</p>
+                  <p class="profile-info">Andrea thrives on seeing key players in the Code4CT ecosystem discover how they can make the greatest impact.</p>
 
-                  <center><img id="profile-image"src="images\tracy-anne.png"></center>
-                  <center><h4>Tracy-Anne Sikenjana<h4></center>
-                    <center><h5>Leadership Program Coordinator</h5><center>
+                  <center><img id="profile-image"src="images\tegan.png"></center>
+                  <center><h4>Tegan Crous<h4></center>
+                    <center><h5>Program Lead</h5><center>
                       <br>
-                      <p class="profile-info">Tracy joined the Code4CT program in 2015 and then matriculated from Rustenburg Girls’ High in 2016. She decided to intern with Code4CT to give back to an organisation that had a large impact on her personal growth and development.</p>
-                    </div>
-                  </section>
+                      <p class="profile-info">Tegan heads up the high school program. She is spurred on by a heart for people and seeing them pursue their potential in a safe, fun and nurturing environment.</p>
 
-                  <section id="section">
-                    <div class="count-up">
-                      <div class="number" id="coffee">
-                        3000
-                      </div>
-                      <br>
-                      <p>cups of coffee</p>
-
-                      <div class="number" id="girls">
-                        780
-                      </div>
-                      <br>
-                      <p>number of girls</p>
-
-                      <div class="number" id="projects">
-                        1850
-                      </div>
-                      <br>
-                      <p>completed projects</p>
-
-                      <div class="number" id="code">
-                        8756
-                      </div>
-                      <br>
-                      <p>hours of coding</p>
-                    </div>
-                  </section>
-
-                  <br>
-
-                  <section>
-                    <div class="newsletter">
-                      <img id="subscribe-icon" src="images\subscribe-icon.png">
-                      <center><h1>Subscribe to Us</h1></center>
-                      <p> Sign up for our newsletter here </p>
-                      <input type="email" name="Email" placeholder="enter your email...">
-                      <button class="subscribe" type="button">Submit</button>
-                    </div>
-                  </section>
-
-                  <section>
-                    <!-- This is the code for the carousel -->
-                    <div id="partners-wrapper">
-                      <div id="partners">
-                        <div class="carousel">
-                          <img src="images\partners\Code4CT-Partners-Automatic-Logo.png">
-                          <img src="images\partners\Code4CT-Partners-CSG-Logo.png">
-                          <img src="images\partners\Code4CT-Partners-Deloitte-Digital.png">
-                          <img src="images\partners\Code4CT-Partners-Lwande.png">
-                          <img src="images\partners\Code4CT-Partners-Mobenzi-Logo.png">
-                          <img src="images\partners\Code4CT-Partners-Open-Box.png">
-                          <img src="images\partners\Code4CT-Partners-Take-A-Lot-Logo-1.png">
-                          <img src="images\partners\Code4CT-Partners-TNS.png">
-                          <img src="images\partners\Code4CT-Partners-US-Department-Of-State-Logo.png">
-                          <img src="images\partners\Code4ct-Partners-WeTech.png">
-                          <img src="images\partners\Code4ct-Partners-Where-Is-My-Transport.png">
-                          <img src="images\partners\DGMurrayTrust-1.png">
-                          <img src="images\partners\partner_capitec-1.png">
-                          <img src="images\partners\partner_google-1.png">
-                          <img src="images\partners\partner-1.png">
-                          <img src="images\partners\rsz_1aws_logo_web_300px_2.png">
+                      <center><img id="profile-image"src="images\tracy-anne.png"></center>
+                      <center><h4>Tracy-Anne Sikenjana<h4></center>
+                        <center><h5>Leadership Program Coordinator</h5><center>
+                          <br>
+                          <p class="profile-info">Tracy joined the Code4CT program in 2015 and then matriculated from Rustenburg Girls’ High in 2016. She decided to intern with Code4CT to give back to an organisation that had a large impact on her personal growth and development.</p>
                         </div>
+                      </section>
+
+                      <section id="countUp-section">
+                        <div class="count-up">
+                          <div class="number" id="coffee">
+                            3000
+                          </div>
+                          <br>
+                          <p id="counter-text">cups of coffee</p>
+
+                          <div class="number" id="girls">
+                            780
+                          </div>
+                          <br>
+                          <p id="counter-text">number of girls</p>
+
+                          <div class="number" id="projects">
+                            1850
+                          </div>
+                          <br>
+                          <p id="counter-text">completed projects</p>
+
+                          <div class="number" id="code">
+                            8756
+                          </div>
+                          <br>
+                          <p id="counter-text">hours of coding</p>
+                        </div>
+                      </section>
+
+                      <br>
+
+                      <section>
+                        <div class="newsletter">
+                          <img id="subscribe-icon" src="images\subscribe-icon.png">
+                          <center><h1>Subscribe to Us</h1></center>
+                          <p id="subscribe-text"> Sign up for our newsletter here </p>
+                          <input type="email" name="Email" placeholder="enter your email...">
+                          <button class="subscribe" type="button">Submit</button>
+                        </div>
+                      </section>
+
+                      <section>
+                        <!-- This is the code for the carousel -->
+                        <div id="partners-wrapper">
+                          <div id="partners">
+                            <div class="carousel">
+                              <img src="images\partners\Code4CT-Partners-Automatic-Logo.png">
+                              <img src="images\partners\Code4CT-Partners-CSG-Logo.png">
+                              <img src="images\partners\Code4CT-Partners-Deloitte-Digital.png">
+                              <img src="images\partners\Code4CT-Partners-Lwande.png">
+                              <img src="images\partners\Code4CT-Partners-Mobenzi-Logo.png">
+                              <img src="images\partners\Code4CT-Partners-Open-Box.png">
+                              <img src="images\partners\Code4CT-Partners-Take-A-Lot-Logo-1.png">
+                              <img src="images\partners\Code4CT-Partners-TNS.png">
+                              <img src="images\partners\Code4CT-Partners-US-Department-Of-State-Logo.png">
+                              <img src="images\partners\Code4ct-Partners-WeTech.png">
+                              <img src="images\partners\Code4ct-Partners-Where-Is-My-Transport.png">
+                              <img src="images\partners\DGMurrayTrust-1.png">
+                              <img src="images\partners\partner_capitec-1.png">
+                              <img src="images\partners\partner_google-1.png">
+                              <img src="images\partners\partner-1.png">
+                              <img src="images\partners\rsz_1aws_logo_web_300px_2.png">
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+
+                      <section>
+                        <div class="miscellaneous">
+                          <center><h1>Contact Us</h1></center>
+                          <center><p id="telephone-number">021 685 0991</p></center>
+                          <br>
+                          <p id="email">info@code4ct.com</p>
+                          <br>
+                          <p>Innovate South Africa,403 Old Castle Brewery, 6 Beach Rd, Woodstock, Cape Town, 7915</p>
+                          <br>
+                          <center><h1>Company</h1></center>
+                          <ul>
+                            <li>About Us</li>
+                            <li>Contact Us</li>
+                            <li>Blog</li>
+                            <li>Testimonials</li>
+                            <li>Affiliate Program</li>
+                          </ul>
+                          <center><h1>Help & Support</h1></center>
+                          <ul>
+                            <li>Help Center</li>
+                            <li>Free Simple Template</li>
+                            <li>Refund Policy</li>
+                            <li>Report Span</li>
+                          </ul>
+                        </div>
+                      </section>
+                      <br>
+
+                      <!-- this is for the scroll  -->
+                      <div class="back-to-top">
+                        <button class="top-button"><a href="#top">^</a></button>
                       </div>
-                    </div>
-                  </section>
 
-<section>
-  <div class="miscellaneous">
-    <center><h1>Contact Us</h1></center>
-    <center><p id="telephone-number">021 685 0991</p></center>
-    <br>
-    <p>info@code4ct.com</p>
-    <br>
-    <p>Innovate South Africa,403 Old Castle Brewery, 6 Beach Rd, Woodstock, Cape Town, 7915</p>
-    <br>
-    <center><h1>Company</h1></center>
-    <ul>
-      <li>About Us</li>
-      <li>Contact Us</li>
-      <li>Blog</li>
-      <li>Testimonials</li>
-      <li>Affiliate Program</li>
-    </ul>
-    <center><h1>Help & Support</h1></center>
-    <ul>
-      <li>Help Center</li>
-      <li>Free Simple Template</li>
-      <li>Refund Policy</li>
-      <li>Report Span</li>
-    </ul>
-  </div>
-</section>
-<br>
-
-<footer>
-  <p>Copyright 2017 Privacy Policy<p>
-    <br>
-    <p> follow us: twitter fb google plus linkein</p>
-  </footer>
+                      <footer>
+                        <p class="footer-text">Copyright 2017 Privacy Policy<p>
+                          <br>
+                          <img class="twitter" src="images\twitter.png">
+                          <img class="linkedin" src="images\linkedin-logo.png">
+                          <img class="facebook" src="images\facebook.png">
+                          <img class="googleplus" src="images\google-plus-social-logotype.png">
+                        </footer>
 
 
-  <script src="javascript/javascript.js"></script>
-</body>
-</html>
+                        <script src="javascript/javascript.js"></script>
+                      </body>
+                      </html>

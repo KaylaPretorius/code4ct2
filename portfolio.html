@@ -1,115 +1,134 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <link rel="stylesheet" href="css/portfolio.css">
-    <meta charset="utf-8">
-    <title></title>
-  </head>
+<head>
+  <link rel="stylesheet" href="css/portfolio.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>portfolio</title>
+</head>
 
-  <header>
+<header class="logo">
+  <img src="images\logo.jpg" alt="logo" width="45%"/>
+</header>
 
-    <img class="logo" src="images\logo.jpg" alt="logo" width="45%">
-    <div id="topnav">
-        <a href="#">Home</a>
-        <a href="#">Courses</a>
-        <a href="#">About Us</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Contact</a>
-      </div>
-    </header>
+<body>
 
-  <body>
+  <div id="top"></div>
 
-    <h2>Our Awesome Portfolio</h2>
-    <p>Over the past 3 years, Code for Cape Town has reached over 600 young women with coding and social innovation. Not only have they been exposed to coding but they have also done careers and life skills courses, design thinking workshops and social innovation projects to address local challenges.</p>
-
-<section>
-      <div class="images">
-        <img src="images\portfolio\image-1.jpg" width="100%">
-        <img src="images\portfolio\image-2.JPG" width="100%">
-        <img src="images\portfolio\image-3.JPG" width="100%">
-        <img src="images\portfolio\image-4.JPG" width="100%">
-        <img src="images\portfolio\image-5.JPG" width="100%">
-        <img src="images\portfolio\image-6.JPG" width="100%">
-        <img src="images\portfolio\image-7.JPG" width="100%">
-        <img src="images\portfolio\image-8.JPG" width="100%">
-        <img src="images\portfolio\image-9.JPG" width="100%">
-        <img src="images\portfolio\image-10.JPG" width="100%">
-        <img src="images\portfolio\image-11.JPG" width="100%">
-        <img src="images\portfolio\image-12.JPG" width="100%">
-    </div>
-</section>
+  <div id="topNav" class="navigation">
+    <span id="closebtn" onclick="navToggle()">
+      <span class="line1"></span>
+      <span class="line2"></span>
+      <span class="line3"></span>
+    </span>
 
 
-<section>
-<!-- This is the code for the carousel -->
-  <div id="partners-wrapper">
-    <div id="partners">
-      <div class="carousel">
-        <img src="images\partners\Code4CT-Partners-Automatic-Logo.png">
-        <img src="images\partners\Code4CT-Partners-CSG-Logo.png">
-        <img src="images\partners\Code4CT-Partners-Deloitte-Digital.png">
-        <img src="images\partners\Code4CT-Partners-Lwande.png">
-        <img src="images\partners\Code4CT-Partners-Mobenzi-Logo.png">
-        <img src="images\partners\Code4CT-Partners-Open-Box.png">
-        <img src="images\partners\Code4CT-Partners-Take-A-Lot-Logo-1.png">
-        <img src="images\partners\Code4CT-Partners-TNS.png">
-        <img src="images\partners\Code4CT-Partners-US-Department-Of-State-Logo.png">
-        <img src="images\partners\Code4ct-Partners-WeTech.png">
-        <img src="images\partners\Code4ct-Partners-Where-Is-My-Transport.png">
-        <img src="images\partners\DGMurrayTrust-1.png">
-        <img src="images\partners\partner_capitec-1.png">
-        <img src="images\partners\partner_google-1.png">
-        <img src="images\partners\partner-1.png">
-        <img src="images\partners\rsz_1aws_logo_web_300px_2.png">
-      </div>
-    </div>
+    <ul class="menulist">
+      <li><a class="menuitems" href="index.html">HOME</a></li>
+      <li><a class="menuitems" href="courses.html">COURSES</a></li>
+      <li><a class="menuitems" href="about.html">ABOUT</a></li>
+      <li><a class="menuitems" href="portfolio.html">PORTFOLIO</a></li>
+      <li><a class="menuitems" href="contact.html">CONTACT</a></li>
+    </ul>
   </div>
-</section>
+
+  <div id="main">
+  </div>
+  <!-- <input type="text" placeholder="Search.."> -->
+  <hr>
 
 
-<section>
-  <div class="miscellaneous">
-    <center><h1>Contact Us</h1></center>
+  <span><h2>Our Awesome Portfolio</h2></span>
+  <p id="portfolio-text">Over the past 3 years, Code for Cape Town has reached over 600 young women with coding and social innovation. Not only have they been exposed to coding but they have also done careers and life skills courses, design thinking workshops and social innovation projects to address local challenges.</p>
+
+  <section>
+    <div class="images">
+      <img src="images\portfolio\image-1.jpg" width="100%">
+      <img src="images\portfolio\image-2.JPG" width="100%">
+      <img src="images\portfolio\image-3.JPG" width="100%">
+      <img src="images\portfolio\image-4.JPG" width="100%">
+      <img src="images\portfolio\image-5.JPG" width="100%">
+      <img src="images\portfolio\image-6.JPG" width="100%">
+      <img src="images\portfolio\image-7.JPG" width="100%">
+      <img src="images\portfolio\image-8.JPG" width="100%">
+      <img src="images\portfolio\image-9.JPG" width="100%">
+      <img src="images\portfolio\image-10.JPG" width="100%">
+      <img src="images\portfolio\image-11.JPG" width="100%">
+      <img src="images\portfolio\image-12.JPG" width="100%">
+    </div>
+  </section>
+
+
+  <section>
+    <!-- This is the code for the carousel -->
+    <div id="partners-wrapper">
+      <div id="partners">
+        <div class="carousel">
+          <img src="images\partners\Code4CT-Partners-Automatic-Logo.png">
+          <img src="images\partners\Code4CT-Partners-CSG-Logo.png">
+          <img src="images\partners\Code4CT-Partners-Deloitte-Digital.png">
+          <img src="images\partners\Code4CT-Partners-Lwande.png">
+          <img src="images\partners\Code4CT-Partners-Mobenzi-Logo.png">
+          <img src="images\partners\Code4CT-Partners-Open-Box.png">
+          <img src="images\partners\Code4CT-Partners-Take-A-Lot-Logo-1.png">
+          <img src="images\partners\Code4CT-Partners-TNS.png">
+          <img src="images\partners\Code4CT-Partners-US-Department-Of-State-Logo.png">
+          <img src="images\partners\Code4ct-Partners-WeTech.png">
+          <img src="images\partners\Code4ct-Partners-Where-Is-My-Transport.png">
+          <img src="images\partners\DGMurrayTrust-1.png">
+          <img src="images\partners\partner_capitec-1.png">
+          <img src="images\partners\partner_google-1.png">
+          <img src="images\partners\partner-1.png">
+          <img src="images\partners\rsz_1aws_logo_web_300px_2.png">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="miscellaneous">
+      <center><h1>Contact Us</h1></center>
       <center><p id="telephone-number">021 685 0991</p></center>
-        <br>
-            <p>info@code4ct.com</p>
-              <br>
-                  <p>Innovate South Africa,403 Old Castle Brewery, 6 Beach Rd, Woodstock, Cape Town, 7915</p>
-                      <br>
-                          <center><h1>Company</h1></center>
-                            <ul>
-                                <li>About Us</li>
-                                <li>Contact Us</li>
-                                <li>Blog</li>
-                                <li>Testimonials</li>
-                                <li>Affiliate Program</li>
-                              </ul>
-                          <center><h1>Help & Support</h1></center>
-                            <ul>
-                                <li>Help Center</li>
-                                <li>Free Simple Template</li>
-                                <li>Refund Policy</li>
-                                <li>Report Span</li>
-                          </ul>
+      <br>
+      <p id="text">info@code4ct.com</p>
+      <br>
+      <p id="text">Innovate South Africa,403 Old Castle Brewery, 6 Beach Rd, Woodstock, Cape Town, 7915</p>
+      <br>
+      <center><h1>Company</h1></center>
+      <ul>
+        <li>About Us</li>
+        <li>Contact Us</li>
+        <li>Blog</li>
+        <li>Testimonials</li>
+        <li>Affiliate Program</li>
+      </ul>
+      <center><h1>Help & Support</h1></center>
+      <ul>
+        <li>Help Center</li>
+        <li>Free Simple Template</li>
+        <li>Refund Policy</li>
+        <li>Report Span</li>
+      </ul>
+    </div>
+  </section>
+  <br>
+
+
+  <!-- this is for the scroll  -->
+  <div class="back-to-top">
+    <button class="top-button"><a href="#top">^</a></button>
   </div>
-</section>
-<br>
 
+  <footer>
+    <p class="footer-text">Copyright 2017 Privacy Policy<p>
+      <br>
+      <img class="twitter" src="images\twitter.png">
+      <img class="linkedin" src="images\linkedin-logo.png">
+      <img class="facebook" src="images\facebook.png">
+      <img class="googleplus" src="images\google-plus-social-logotype.png">
+    </footer>
 
-<footer>
-<p class="footer">Copyright 2017 Privacy Policy</p>
-<p class="footer">follow us: twitter fb google plus linkein</p>
-</footer>
-
-
-
-
-
-
+    <script src="javascript/javascript.js"></script>
   </body>
-</html>
-
-
-<!-- map for contacts -->
-<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.638062446006!2d18.446525914831234!3d-33.92471368064066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5d99aa2d5a49%3A0xe3d98aec2cc1ee1c!2sUrbantek!5e0!3m2!1sen!2sza!4v1530629021996" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+  </html>

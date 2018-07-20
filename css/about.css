@@ -1,129 +1,187 @@
-html, body {
-  width: 100%;
-  height: 100%;
+body {
+  font-family: sans-serif;
   margin: 0;
+  padding: 0;
+}
+/* this is for the styling of back to top button placed in footer */
+html {
+  scroll-behavior: smooth;
 }
 
-.nav {
-  /* border-bottom: 1px solid #EAEAEB; */
-  text-align: right;
-  /* nav moved to right of the page */
-  height: 70px;
-  line-height: 70px;
-  /* this will help center everything vertically inside nav */
+.navigation {
+  width: 50%;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 4px -3px #232323;
+  -moz-box-shadow: 0 4px 4px -3px #232323;
+  -webkit-box-shadow: 0 4px 4px -3px #232323;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+  padding-top: 0px;
+  margin-left: 50%;
 }
 
-.menu {
-  margin: 0 30px 0 0;
-  /* <!-- top right bottom left--> */
-}
-
-.menu a {
-  /* this targets links inside of nav */
-  clear: right;
+.navigation a {
   text-decoration: none;
-  /* this removes underline */
-  color: #E38f84;
-  margin: 0 10px;
-  line-height: 70px;
-  padding: 101px;
 }
 
-label {
-  margin: 4px 48px 0 0;
-  font-size: 26px;
-  line-height: 70px;
-  /* line-height constant accross all styles for nav */
-  display: none;
-  // display: block;
-  width: 26px;
-  float: right;
-  /* this keeps hamburger icon visible */
+.navigation ul {
+  margin-top:30px;
+  text-align:center;
+  list-style:none;
+  margin-left:auto;
+  margin-right:auto;
 }
-#toggle {
-  display: none;
-  /* this hides checkbox */
+
+.menulist {
+  width:200px;
 }
 
 .logo {
-  /* this style positions logo image to left side of webpage */
+  margin:0 auto;
+}
+
+.line1, .line2, .line3 {
+  margin-top:5px;
+  background-color: hsl(0, 4%, 5%);
+  width:25px;
+  height:3px;
+  display:block;
+  position:relative;
+  opacity:1.0;
+  border-radius:15%;
+  transition: all .3s;
+}
+
+.line1.active {
+  transform: rotate(270deg);
+  opacity:0.0;
+  background-color:black;
+  top:5px;
+}
+
+.line2.active {
+  transform: rotate(45deg);
+  background-color:black;
+}
+
+.line3.active {
+  transform: rotate(-45deg);
+  background-color:black;
+  top:-7px;
+}
+
+.menuitems {
+  margin-right: 100%;
+  padding-top: 13px;
+  padding-bottom: 12px;
+  text-decoration: none;
+  list-style:none;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  display: inline-block;
+  position:relative;
+  text-align:center;
+  color: white;
+  font-weight: bolder;
+  opacity:0.0;
+  transition: all .5s ease-in-out;
+}
+
+.menuitems:after {
+  content:'';
+  display:block;
+  width: 0;
+  height: 1px;
+  background: #fff;
+  transition: width .2s;
+}
+
+.menuitems:hover::after {
+  width:100%;
+}
+
+#closebtn {
+  height:25px;
+  width:25px;
+  position: absolute;
+  text-decoration:none;
+  top: 10px;
+  left: 135px;
+  font-size: 36px !important;
+  margin-right: 50px;
+  z-index:100;
+  color:#fff;
+  cursor:pointer;
+  transition:background-position .3s;
+}
+
+#main {
+  transition: margin-top .4s;
+  text-align:center;
+  margin:auto;
+  padding: 16px;
+  font-size:30px;
+}
+
+header, .logo {
   float: left;
-  margin-left: 5%;
 }
 
-h1 {
-margin-bottom: -10%;
-margin-top: 10%;
-line-height: 60px;
-/* margin-left: 30%; */
-padding: 10%;
-font-size: 55px;
+hr {
+  margin-top: 12%;
 }
 
- p {
-  margin-top: 5%;
-  line-height: 55px;
-  width: 100%;
-  text-align: center;
-  /* margin-left: 16%; */
-  font-size: 50px;
+
+* {box-sizing:border-box}
+
+span {
+  text-decoration: underline;
+  text-decoration-color: #ffb6c1;
+  text-decoration-style: solid;
+}
+
+#welcome-text {
+  width: 90%;
+  margin-left: 6%;
 }
 
 .read-more {
-  height: 100px;
+  margin-bottom: 5%;
   background-color: #ffb6c1;
   border-radius: 15%;
-  margin-bottom: 26%;
-  margin-top: 1%;
-  /* margin-left: 50%; */
-  font-size: 50px;
-  padding: 20px;
+  font-size: 15px;
+  font-weight: bold;
 }
 
-.about, .about2 {
-  width: 138%;
+.read-more:active{
+  padding-right: 50px;
+}
+
+.about-image {
+  width: 100%;
 }
 
 h2 {
-  margin-top: -8%;
-  margin-bottom: -10%;
-  line-height: 60px;
-  /* margin-left: 30%; */
-  padding: 10%;
-  font-size: 55px;
+  margin-top: -2%;
+}
+
+#intro-text {
+  width: 100%;
+  margin-left: 2%;
 }
 
 h3 {
-  /* margin-left: 30%; */
-  padding: 10%;
-  font-size: 55px;
-}
-
-h4, h5 {
-  line-height: 40px;
-  /* margin-left: 30%; */
-  font-size: 55px;
-}
-
-#profile-image {
-  /* margin-left: 18%; */
-  width: 80%;
-  float: none;
-
+  font-size: 20px;
 }
 
 .profile-info {
   text-align: center;
-  /* margin-left: 17%; */
-  margin-top: -10%;
-  line-height: 80px;
-  margin-bottom: 20%;
-}
-
-.newsletter {
   padding: 10px;
-  margin-top: -10%;
-  margin-bottom: 10%;
+  margin-top: -3%;
 }
 
 .percentage-counter {
@@ -138,38 +196,38 @@ h4, h5 {
   color: #fff;
 }
 
-canvas {
-  /*  add in media query */
-  width: 100%;
-  margin-left: -3%;
-}
-
-p {
-margin-top: 10%;
-line-height: 55px;
-width: 100%;
-text-align: center;
-margin-left: 0%;
-font-size: 50px;
+.sign-up {
+  font-size: 16px;
+  margin-top: 10%;
 }
 
 .subscribe {
-  font-size: 40px;
+  font-size: 15px;
   padding: 5px;
   background-color: #ffb6c1;
 }
 
-#subscribe-icon {
-width: 10%;
-margin-left: 16%;
-margin-bottom: -30%;
+.newsletter {
+  padding: 10px;
+  margin-top: -10%;
+  margin-bottom: 10%;
 }
 
+#subscribe-icon {
+  width: 10%;
+  margin-left: 21%;
+  margin-bottom: -19%;
+}
+
+.text{
+  text-align: center;
+  font-size: 15px;
+}
 
 input {
-  margin-left: 20%;
+  margin-left: 12%;
   padding: 5px;
-  font-size: 40px;
+  font-size: 15px;
 }
 
 /*  This is where the styling for carousel starts*/
@@ -195,34 +253,34 @@ input {
 }
 
 /*this styling regulates the speed and loop of the carousel*/
-#partners, .ready > *{
-display: inline-block;
-float:left;
-overflow: hidden;
+#partners, .ready *{
+  display: inline-block;
+  float:left;
+  overflow: hidden;
 
-/* linear feature aligns images in a row */
-webkit-animation-timing-function: linear;
-animation-timing-function: linear;
-
-
--webkit-animation-timing-function: linear;
-animation-timing-function: linear;
-
-/* this is the actual time before the slider starts */
--webkit-animation-delay: 1s;
-animation-delay: 1s;
+  /* linear feature aligns images in a row */
+  webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
 
 
--webkit-animation-duration: 20s;
-animation-duration: 20s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+
+  /* this is the timeframe before the slider starts */
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
 
 
--webkit-animation-name: marginator;
-animation-name: marginator;
+  -webkit-animation-duration: 70s;
+  animation-duration: 70s;
 
-/* the infinite feature prevents pause so slider runs continously */
--webkit-animation-iteration-count: infinite;
-animation-iteration-count: infinite;
+
+  -webkit-animation-name: marginator;
+  animation-name: marginator;
+
+  /* the infinite feature prevents pause so slider runs continously */
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
 
 /*the carousel will pause on hover and the movement is regulated here*/
@@ -262,9 +320,53 @@ animation-iteration-count: infinite;
     -webkit-transform: translate3d(-100%,0,0);
     transform: translate3d(-100%,0,0);
   }
-}
-/* styling for carousel ends here */
+  } */
+  /* styling for carousel ends here */
 
-footer {
-background-color: #ff5252;
-}
+
+
+  /* this styles the back to top button */
+
+  .back-to-top {
+    margin-top: 10%;
+  }
+
+  .top-button {
+    margin-left: 88%;
+    padding: 10px;
+    background-color: grey;
+    font-weight: bolder;
+  }
+
+  .facebook {
+    width: 6%;
+    margin-bottom: -5%;
+  }
+
+  .linkedin {
+    width: 6%;
+    margin-bottom: -5%;
+  }
+
+  .twitter {
+    width: 6%;
+    margin-bottom: -6%;
+  }
+
+  .googleplus {
+    width: 6%;
+    margin-bottom: -5.5%;
+  }
+
+  .footer-text {
+    font-size: 12px;
+    margin-top: 5%;
+    font-weight: bold;
+  }
+
+  footer {
+    text-align: center;
+    text-decoration: none;
+    height: 20%;
+    background-color: #ffb6c1 ;
+  }
